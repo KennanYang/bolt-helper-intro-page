@@ -1,0 +1,9 @@
+[build]
+command = "npm run build"
+output_dir = "dist"
+
+[build.upload]
+format = "service-worker"
+
+[env.production]
+name = "bolt-helper-intro-page" 
