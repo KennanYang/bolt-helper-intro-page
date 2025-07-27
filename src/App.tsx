@@ -371,16 +371,18 @@ function App() {
             >
               <X className="w-8 h-8" />
             </button>
-            <div className="bg-black rounded-2xl overflow-hidden">
-              <video 
-                controls 
-                autoPlay 
-                className="w-full h-auto"
-                poster="/video-poster.jpg"
-              >
-                <source src="/bolt_helper.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-black rounded-2xl overflow-hidden p-8">
+              <div className="w-full max-w-2xl mx-auto rounded-lg shadow-lg bg-gray-800 flex items-center justify-center h-64">
+                <div className="text-center text-gray-400">
+                  <div className="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
+                    </svg>
+                  </div>
+                  <p className="text-lg font-medium">视频演示</p>
+                  <p className="text-sm mt-2">视频文件正在处理中，稍后更新</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
